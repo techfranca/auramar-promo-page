@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { ChevronLeft, ChevronRight, Star, Check, Shield, Truck, RefreshCw } from "lucide-react"
 import YampiBuyButton from "@/components/YampiBuyButton"
+import Image from "next/image"
 
 export default function FitnessLandingPage() {
   const [currentImage, setCurrentImage] = useState(0)
@@ -173,11 +174,14 @@ export default function FitnessLandingPage() {
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             <div className="relative">
               <div className="overflow-hidden rounded-lg">
-                <img
+                <Image
                   src={heroCarouselImages[currentHeroImage] || "/placeholder.svg"}
                   alt={`Modelo usando conjunto fitness ${currentHeroImage + 1}`}
+                  width={600}
+                  height={800}
                   className="w-full h-[600px] md:h-[500px] lg:h-[600px] object-cover transition-all duration-300 aspect-[9/16]"
-                  loading="lazy"
+                  priority={currentHeroImage === 0}
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
 
@@ -209,11 +213,13 @@ export default function FitnessLandingPage() {
             </div>
             <div className="relative">
               <div className="overflow-hidden rounded-lg">
-                <img
+                <Image
                   src={brownSetImages[currentBrownImage] || "/placeholder.svg"}
                   alt={`Conjunto Marrom Grátis ${currentBrownImage + 1}`}
+                  width={600}
+                  height={800}
                   className="w-full h-[600px] md:h-[500px] lg:h-[600px] object-cover transition-all duration-300 aspect-[9/16]"
-                  loading="lazy"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
 
@@ -320,11 +326,13 @@ export default function FitnessLandingPage() {
             ].map((benefit, index) => (
               <div key={index} className="text-center">
                 <div className="mb-4">
-                  <img
+                  <Image
                     src={benefit.image || "/placeholder.svg"}
                     alt={benefit.title}
+                    width={400}
+                    height={300}
                     className="w-full h-48 object-cover rounded-lg mb-4"
-                    loading="lazy"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
                 </div>
                 <h3 className="text-lg font-semibold mb-2">{benefit.title}</h3>
@@ -419,11 +427,12 @@ export default function FitnessLandingPage() {
             {testimonials.slice(0, 3).map((testimonial, index) => (
               <div key={index} className="bg-white p-6 rounded-lg shadow-sm">
                 <div className="flex items-center gap-3 mb-4">
-                  <img
+                  <Image
                     src={testimonial.image || "/placeholder.svg"}
                     alt={testimonial.name}
+                    width={48}
+                    height={48}
                     className="w-12 h-12 rounded-full object-cover"
-                    loading="lazy"
                   />
                   <div>
                     <h4 className="font-semibold">{testimonial.name}</h4>
@@ -443,11 +452,12 @@ export default function FitnessLandingPage() {
             {testimonials.slice(3).map((testimonial, index) => (
               <div key={index} className="bg-white p-6 rounded-lg shadow-sm">
                 <div className="flex items-center gap-3 mb-4">
-                  <img
+                  <Image
                     src={testimonial.image || "/placeholder.svg"}
                     alt={testimonial.name}
+                    width={48}
+                    height={48}
                     className="w-12 h-12 rounded-full object-cover"
-                    loading="lazy"
                   />
                   <div>
                     <h4 className="font-semibold">{testimonial.name}</h4>
@@ -495,11 +505,13 @@ export default function FitnessLandingPage() {
           </div>
 
           <div className="text-center mb-6">
-            <img
+            <Image
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%2B%20%281%29-xAPb4wwZ0wYRAWLyPib4ld4c2Jy3rO.svg"
               alt="Kit completo - 2 conjuntos"
+              width={600}
+              height={400}
               className="mx-auto rounded-lg"
-              loading="lazy"
+              sizes="(max-width: 768px) 100vw, 600px"
             />
           </div>
 
@@ -517,11 +529,13 @@ export default function FitnessLandingPage() {
           <div className="bg-white rounded-lg p-6 mb-6">
             <div className="relative">
               <div className="overflow-hidden rounded-lg">
-                <img
+                <Image
                   src={sizeChartImages[currentSizeChart] || "/placeholder.svg"}
                   alt={`Tabela de medidas ${currentSizeChart + 1}`}
+                  width={800}
+                  height={600}
                   className="w-full rounded-lg"
-                  loading="lazy"
+                  sizes="(max-width: 768px) 100vw, 800px"
                 />
               </div>
 
@@ -658,9 +672,11 @@ export default function FitnessLandingPage() {
       {/* Footer */}
       <footer className="px-4 py-8 bg-gray-900 text-white">
         <div className="max-w-6xl mx-auto text-center">
-          <img
+          <Image
             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Design%20sem%20nome-QRedQRkh1Vcazmyv779FeQwUkh0Rgx.svg"
             alt="Logo Auramar"
+            width={120}
+            height={32}
             className="h-8 mx-auto mb-4"
           />
           <p className="text-sm text-gray-400 mb-2">Instagram: @auramar.modapraia</p>
