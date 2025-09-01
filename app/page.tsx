@@ -279,14 +279,12 @@ export default function FitnessLandingPage() {
           </div>
 
           <div className="text-center">
-            <a
-              href="https://auramar2.yampi.io/checkout/21K7IUQCCC"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors w-full md:w-auto text-center"
+            <button
+              onClick={scrollToCheckout}
+              className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors w-full md:w-auto text-center"
             >
               GARANTIR MINHA PROMO
-            </a>
+            </button>
           </div>
         </div>
       </section>
@@ -342,14 +340,12 @@ export default function FitnessLandingPage() {
           </div>
 
           <div className="text-center">
-            <a
-              href="https://auramar2.yampi.io/checkout/21K7IUQCCC"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors w-full md:w-auto text-center"
+            <button
+              onClick={scrollToCheckout}
+              className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors w-full md:w-auto text-center"
             >
               GARANTIR MINHA PROMO
-            </a>
+            </button>
           </div>
         </div>
       </section>
@@ -474,14 +470,12 @@ export default function FitnessLandingPage() {
           </div>
 
           <div className="text-center">
-            <a
-              href="https://auramar2.yampi.io/checkout/21K7IUQCCC"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors w-full md:w-auto text-center"
+            <button
+              onClick={scrollToCheckout}
+              className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors w-full md:w-auto text-center"
             >
               GARANTIR MINHA PROMO
-            </a>
+            </button>
           </div>
         </div>
       </section>
@@ -595,14 +589,12 @@ export default function FitnessLandingPage() {
           </div>
 
           <div className="text-center">
-            <a
-              href="https://auramar2.yampi.io/checkout/21K7IUQCCC"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors w-full md:w-auto text-center"
+            <button
+              onClick={scrollToCheckout}
+              className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors w-full md:w-auto text-center"
             >
               GARANTIR MINHA PROMO
-            </a>
+            </button>
           </div>
         </div>
       </section>
@@ -657,14 +649,12 @@ export default function FitnessLandingPage() {
           </div>
 
           <div className="text-center">
-            <a
-              href="https://auramar2.yampi.io/checkout/21K7IUQCCC"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors w-full md:w-auto text-center"
+            <button
+              onClick={scrollToCheckout}
+              className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors w-full md:w-auto text-center"
             >
               GARANTIR MINHA PROMO
-            </a>
+            </button>
           </div>
         </div>
       </section>
