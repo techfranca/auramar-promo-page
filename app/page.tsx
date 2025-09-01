@@ -487,21 +487,21 @@ export default function FitnessLandingPage() {
             <h2 className="text-2xl md:text-3xl font-bold text-center mb-4"> OFERTA ESPECIAL HOJE!</h2>
             <div className="text-xl md:text-2xl mb-4">
               <span className="text-gray-600">Você paga:</span>
-              <span className="font-bold text-green-600 mx-2">R$139,90</span>
+              <span className="font-bold text-green-600 mx-2">R$129,90</span>
               <span className="text-gray-600">→ Recebe:</span>
               <span className="font-bold mx-2">2 conjuntos</span>
               <span className="text-gray-600">(Verde + Marrom)</span>
             </div>
             <div className="text-lg text-gray-600 mb-4">
               Valor real do combo: <span className="font-bold line-through text-black">R$259,80</span> — Você economiza:{" "}
-              <span className="font-bold text-red-600">R$119,90</span>
+              <span className="font-bold text-red-600">R$139,90</span>
             </div>
           </div>
 
           <div className="text-center mb-6">
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%2B%20%281%29-xAPb4wwZ0wYRAWLyPib4ld4c2Jy3rO.svg"
-              alt="Kit completo - 2 conjuntos"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pre%C3%A7o_auramar-3uy0jHscZ5xktlJ66CeVtzYdTJevCe.png"
+              alt="Promoção - 2 conjuntos por R$129,90"
               width={600}
               height={400}
               className="mx-auto rounded-lg"
