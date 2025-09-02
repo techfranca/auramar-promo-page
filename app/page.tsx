@@ -4,6 +4,8 @@ import { useState } from "react"
 import { ChevronLeft, ChevronRight, Star, Check, Shield, Truck, RefreshCw } from "lucide-react"
 import YampiBuyButton from "@/components/YampiBuyButton"
 import Image from "next/image"
+import { Tag } from "lucide-react"
+
 
 export default function FitnessLandingPage() {
   const [currentImage, setCurrentImage] = useState(0)
@@ -167,8 +169,20 @@ export default function FitnessLandingPage() {
               <span className="font-bold underline"> GRÁTIS</span>! 🎁
             </h1>
             <p className="text-lg md:text-xl text-gray-600 mb-6 text-pretty">
-              Promoção válida somente enquanto durarem os estoques!
+              🔥 Tudo isso por um valor simbólico — menos do que você pagaria em uma conta de luz. Descubra a oferta especial logo abaixo.
             </p>
+            {/* Chip discreto com alusão ao preço */}
+<div className="mt-4 flex items-center justify-center gap-3">
+  <span className="inline-flex items-center gap-2 rounded-full border border-green-600/20 bg-green-50 text-green-700 px-3 py-1 text-sm md:text-base">
+    <Tag className="w-4 h-4" />
+    Promo exclusiva: <strong>2 conjuntos a partir de R$129,90</strong>
+  </span>
+  <span className="hidden md:inline text-gray-300">|</span>
+  <span className="hidden md:inline text-gray-500 text-sm md:text-base">
+    ⚡ Estoque limitado
+  </span>
+</div>
+
           </div>
 
           <div className="grid md:grid-cols-2 gap-6 mb-8">
