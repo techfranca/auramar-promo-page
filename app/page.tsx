@@ -169,7 +169,7 @@ export default function FitnessLandingPage() {
               <span className="font-bold underline"> GRÁTIS</span>! 🎁
             </h1>
             <p className="text-lg md:text-xl text-gray-600 mb-6 text-pretty">
-              🔥 Tudo isso por um valor simbólico — menos do que você pagaria em uma conta de luz. Descubra a oferta especial logo abaixo.
+              🔥 Tudo isso por um valor simbólico — Qualidade premium, conforto e estilo por um preço que cabe no bolso.
             </p>
             {/* Chip discreto com alusão ao preço */}
 <div className="mt-4 flex items-center justify-center gap-3">
