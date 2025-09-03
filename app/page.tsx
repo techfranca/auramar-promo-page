@@ -1,11 +1,19 @@
 "use client"
 
 import { useState } from "react"
-import { ChevronLeft, ChevronRight, Star, Check, Shield, Truck, RefreshCw } from "lucide-react"
+import {
+  ChevronLeft,
+  ChevronRight,
+  Star,
+  Check,
+  Shield,
+  Truck,
+  RefreshCw,
+  AlertTriangle, // Ícone adicionado para a nova seção
+} from "lucide-react"
 import YampiBuyButton from "@/components/YampiBuyButton"
 import Image from "next/image"
 import { Tag } from "lucide-react"
-
 
 export default function FitnessLandingPage() {
   const [currentImage, setCurrentImage] = useState(0)
@@ -172,17 +180,16 @@ export default function FitnessLandingPage() {
               🔥 Tudo isso por um valor simbólico — Qualidade premium, conforto e estilo por um preço que cabe no bolso.
             </p>
             {/* Chip discreto com alusão ao preço */}
-<div className="mt-4 flex items-center justify-center gap-3">
-  <span className="inline-flex items-center gap-2 rounded-full border border-green-600/20 bg-green-50 text-green-700 px-3 py-1 text-sm md:text-base">
-    <Tag className="w-4 h-4" />
-    Promo exclusiva: <strong>2 conjuntos a partir de R$129,90</strong>
-  </span>
-  <span className="hidden md:inline text-gray-300">|</span>
-  <span className="hidden md:inline text-gray-500 text-sm md:text-base">
-    ⚡ Estoque limitado
-  </span>
-</div>
-
+            <div className="mt-4 flex items-center justify-center gap-3">
+              <span className="inline-flex items-center gap-2 rounded-full border border-green-600/20 bg-green-50 text-green-700 px-3 py-1 text-sm md:text-base">
+                <Tag className="w-4 h-4" />
+                Promo exclusiva: <strong>2 conjuntos a partir de R$129,90</strong>
+              </span>
+              <span className="hidden md:inline text-gray-300">|</span>
+              <span className="hidden md:inline text-gray-500 text-sm md:text-base">
+                ⚡ Estoque limitado
+              </span>
+            </div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6 mb-8">
@@ -493,6 +500,26 @@ export default function FitnessLandingPage() {
           </div>
         </div>
       </section>
+
+      {/* ================================================================== */}
+      {/* ================ NOVA SEÇÃO DE AVISO IMPORTANTE ================ */}
+      {/* ================================================================== */}
+      <section className="px-4 py-8 bg-yellow-50 border-t border-b border-yellow-200">
+        <div className="max-w-4xl mx-auto">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-center md:text-left">
+            <AlertTriangle className="w-12 h-12 md:w-10 md:h-10 text-yellow-500 flex-shrink-0" />
+            <div>
+              <h3 className="text-xl font-bold text-gray-900">Atenção para o Brinde!</h3>
+              <p className="text-gray-700 mt-1 max-w-2xl mx-auto">
+                Para garantir seu conjunto grátis, lembre-se de <strong>selecionar o brinde no checkout</strong> antes de finalizar a compra. É super simples!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* ================================================================== */}
+      {/* =================== FIM DA NOVA SEÇÃO DE AVISO =================== */}
+      {/* ================================================================== */}
 
       {/* Irresistible Offer */}
       <section className="px-4 py-12" id="oferta-especial-auramar">
